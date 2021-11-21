@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205437538}
   m_LocalRotation: {x: 0.36855957, y: -0, z: -0, w: 0.9296041}
-  m_LocalPosition: {x: -33.91, y: 11.92, z: -10}
+  m_LocalPosition: {x: -12.9, y: 18.62, z: -17.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -219,8 +219,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eb16340574cd464c8ee2fd153cf88a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CuboAwake: {fileID: 0}
-  NuevoCubo1: 0
+  CuboAwake: {fileID: 7642111022738083133, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
+  ListaDeCubos: []
+  cantidad: 0
 --- !u!1 &996323793
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +234,8 @@ GameObject:
   - component: {fileID: 996323797}
   - component: {fileID: 996323796}
   - component: {fileID: 996323795}
+  - component: {fileID: 996323798}
+  - component: {fileID: 996323799}
   m_Layer: 0
   m_Name: ground (1)
   m_TagString: Untagged
@@ -248,7 +251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996323793}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1120872, y: -6.575371, z: 8.836529}
+  m_LocalPosition: {x: 34.39, y: -8.52, z: 8.836529}
   m_LocalScale: {x: 15, y: 1, z: 15}
   m_Children: []
   m_Father: {fileID: 2072960060}
@@ -316,6 +319,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996323793}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &996323798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996323793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0327710a150ceda49a9ba9f1c1cf512b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CuboMagico: {fileID: 7642111022738083133, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
+  ListaDeCubos: []
+  FactorDeEscalamiento: 0.9
+  cantidad: 0
+--- !u!114 &996323799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996323793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b19c07994b4f41d46bd50a90b81a409a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CuboMagico: {fileID: 7642111022738083133, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
+  ListaDeCubos: []
+  cantidad: 0
 --- !u!1 &1038341473
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038341473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.10684, y: 2.3667498, z: 2.8799174}
+  m_LocalPosition: {x: -23.3, y: 2.3667498, z: 2.8799174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1277897837}
@@ -578,7 +612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2121480339}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -36.67, y: 19.06, z: 0.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

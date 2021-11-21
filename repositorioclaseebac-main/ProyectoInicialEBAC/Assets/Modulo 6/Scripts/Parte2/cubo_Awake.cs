@@ -5,13 +5,15 @@ using UnityEngine;
 public class cubo_Awake : MonoBehaviour
 {
     public GameObject CuboAwake;
-    public int NuevoCubo1 = 0;
+    public List<GameObject> ListaDeCubos;
+    public int cantidad = 0;
 
     private void Awake()
     {
-        NuevoCubo1++;
+        cantidad++;
         GameObject tempGameObject = Instantiate<GameObject>(CuboAwake);
-        tempGameObject.name = ("CuboNuevo") + NuevoCubo1;
+        tempGameObject.name = "CuboNuevo" + cantidad;
+        ListaDeCubos = new List<GameObject>();
     }
 
     // Start is called before the first frame update

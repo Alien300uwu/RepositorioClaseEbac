@@ -306,7 +306,7 @@ Transform:
   m_GameObject: {fileID: 806985639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.52, y: -1.43, z: -3.78}
-  m_LocalScale: {x: 100, y: 1, z: 100}
+  m_LocalScale: {x: 25, y: 1, z: 25}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -325,6 +325,7 @@ GameObject:
   - component: {fileID: 1448079884}
   - component: {fileID: 1448079888}
   - component: {fileID: 1448079889}
+  - component: {fileID: 1448079890}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -416,7 +417,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448079883}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c15ccd5000120d841934916bf299eef5, type: 3}
   m_Name: 
@@ -428,9 +429,25 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448079883}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 623af1fada88b264abbdce5906f2bbc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PrefabCubo: {fileID: 0}
+  listaDeCubo: []
+  FactorDeEscalamiento: 0
+  numCubos: 0
+--- !u!114 &1448079890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448079883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6df2364bb75c00e41aad2aefd3ad79a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &526960828986935154
@@ -554,6 +571,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7642111022738083122, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642111022738083124, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7642111022738083126, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -596,6 +621,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7642111022738083126, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642111022738083127, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7642111022738083133, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}

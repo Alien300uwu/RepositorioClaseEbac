@@ -14,6 +14,7 @@ public class HolaMundo : MonoBehaviour
         
         Debug.LogWarning("Esto no es un error");
         Debug.LogError("Esto esta mal xd");
+        Debug.Log(x);
     }
 
     // Update is called once per frame

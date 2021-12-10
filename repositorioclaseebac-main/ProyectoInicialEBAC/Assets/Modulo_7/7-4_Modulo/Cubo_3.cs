@@ -7,6 +7,7 @@ public class Cubo_3 : MonoBehaviour
 
     public Cubo_0 x;
     bool Valor_del_primer_cubo;
+    public bool variable_publica_para_el_4;
 
     Color Cambiaformas = Color.blue;
     Color Origenformas = Color.magenta;

@@ -18,13 +18,18 @@ public class Tarea_Modulo_8_2 : MonoBehaviour
     int b = 5;
     int seleccionador;
 
-
+    string nombre = "PaoloMartiniBellot";
+   
+    
     Color ColorDePalabra = Color.blue;
     string Seleccionador;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        
+
 
         Debug.Log(palabras [0]);
     }

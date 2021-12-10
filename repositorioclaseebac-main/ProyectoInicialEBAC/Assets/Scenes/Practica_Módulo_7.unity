@@ -366,6 +366,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4249d9dbc38829f41aec7081b79581d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  x: {fileID: 1349843457}
+  variable_publica_para_el_4: 0
 --- !u!4 &342504278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7642111022738083126, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
@@ -551,6 +553,26 @@ PrefabInstance:
     - {fileID: 7642111022738083127, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
     - {fileID: 7642111022738083122, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
+--- !u!1 &653666831 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7642111022738083133, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
+  m_PrefabInstance: {fileID: 411410060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &653666836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653666831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e81e98f0e56e5d44adbbf8b41ad4e61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cubo0: {fileID: 1349843457}
+  Cubo3: {fileID: 342504272}
+  Cubo2: {fileID: 1647844635}
 --- !u!1 &854821189 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7642111022738083133, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
@@ -798,7 +820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09c2b9063bf8ad94d8cdde0a2477ad28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: {fileID: 1349843455}
+  ValorDeCubo_0: 0
 --- !u!4 &1349843463 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7642111022738083126, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
@@ -902,9 +924,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 486f692476d1ea547aa28c915f8a6e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Color: {fileID: 1647844633}
-  a: {fileID: 1349843457}
-  b: {fileID: 2054846769}
+  Cubox: {fileID: 1349843457}
+  Cubox1: {fileID: 2054846769}
+  ValorCubo3: 0
 --- !u!4 &1647844641 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7642111022738083126, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}
@@ -1235,6 +1257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab3ab3322f9ca434484b2dc7ad98b897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cubo_verdadero: 1
 --- !u!4 &2054846775 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7642111022738083126, guid: c2a8607cb389fdb4b99eb7dd300b992e, type: 3}

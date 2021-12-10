@@ -4,34 +4,33 @@ using UnityEngine;
 
 public class Tarea_Modulo_8_2 : MonoBehaviour
 {
-    
-    string[] palabras =
-    {
-        "Alpha",
-        "Beta",
-        "Chalie",
-        "Delta",
-        "Echo"
-    };
 
-    int a = 0;
-    int b = 5;
-    int seleccionador;
 
-    string nombre = "PaoloMartiniBellot";
-   
-    
-    Color ColorDePalabra = Color.blue;
-    string Seleccionador;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        char a = 'A'; 
+        int Cambio_De_Color = 0;
+        if (!int.TryParse(a.ToString(), out Cambio_De_Color))
+        {
+            Debug.LogError("Eso no funciona");
+        }
+            Debug.Log(a);
 
-        
 
+        float Alpha = 1;
+        string Beta = "Beta";
+        float cambio = 0;
 
-        Debug.Log(palabras [0]);
+        if (float.TryParse(Alpha.ToString(), out cambio)) ;
+        {
+            Debug.Log(Alpha);
+        }
+
+        string B = Beta.Substring(0, 4);
+        Debug.Log(B);
     }
 
     // Update is called once per frame
@@ -43,10 +42,6 @@ public class Tarea_Modulo_8_2 : MonoBehaviour
     }
     private void FixedUpdate()
     {
-
-        seleccionador = Random.Range(a, b);
-        Debug.LogWarning(seleccionador);
-
 
     }
 }

@@ -33,7 +33,7 @@ public class Tarea_Modulo_8 : MonoBehaviour
 
         Pastel = Pastel + 3;
         Crema = (int)Pastel;
-        Debug.Log(Crema);
+        
         
 
         if (Crema % 2 == 0)

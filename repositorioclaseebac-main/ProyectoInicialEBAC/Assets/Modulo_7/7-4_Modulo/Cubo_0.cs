@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class Cubo_0 : MonoBehaviour
 {
-    public GameObject Color;
+    Color colorverdadero = Color.yellow;
+    Color colorfalso = Color.red;
 
-    bool verdadera;
-
-
-    //int limitador = 1;
-    //int limiteInferior = 10;
-    //int limiteSuperior = -10;
-
+    public bool ValorDeCubo_0;
     // Start is called before the first frame update
+
+
     void Start()
     {
 
@@ -22,41 +19,25 @@ public class Cubo_0 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.LogWarning(ValorDeCubo_0);
     }
 
     private void FixedUpdate()
     {
-        
-
-        if (verdadera == true)
+        if (ValorDeCubo_0 == true)
         {
-        
-            Color.GetComponent<MeshRenderer>().material.color = UnityEngine.Color.green;
-            verdadera = false;
+
+
+            GetComponent<MeshRenderer>().material.color = colorverdadero;
+            ValorDeCubo_0 = false;
+
         }
         else
         {
-        
-            Color.GetComponent<MeshRenderer>().material.color = UnityEngine.Color.cyan;
-            Debug.Log(verdadera);
-            verdadera = true;
+
+            GetComponent<MeshRenderer>().material.color = colorfalso;
+            ValorDeCubo_0 = true;
         }
-
-        
-
-       //if(limitador > 0)
-       // {
-       //     Color.GetComponent<MeshRenderer>().material.color = UnityEngine.Color.green;
-       // }
-       
-       // else
-       // {
-       //     Color.GetComponent<MeshRenderer>().material.color = UnityEngine.Color.cyan;
-       // }
-       // Debug.Log(limitador);
-
-       //limitador = Random.Range(limiteInferior, limiteSuperior);
     }
 
 }

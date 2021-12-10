@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cubo_2 : MonoBehaviour
+public class Cubo_4 : MonoBehaviour
 {
-  
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +14,5 @@ public class Cubo_2 : MonoBehaviour
     void Update()
     {
         
-    }
-
-    private void FixedUpdate()
-    {
-
     }
 }

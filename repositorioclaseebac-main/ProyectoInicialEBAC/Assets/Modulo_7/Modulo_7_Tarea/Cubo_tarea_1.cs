@@ -4,22 +4,24 @@ using UnityEngine;
 
 public class Cubo_tarea_1 : MonoBehaviour
 {
+    
 
-    public GameObject Color;
+    Color colorverdadero = Color.white;
+    Color colorfalso = Color.black;
 
-    bool verdadera;
+    public bool verdadera;
     // Start is called before the first frame update
     
     
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        //Debug.LogWarning(verdadera);
     }
 
     private void FixedUpdate()
@@ -27,13 +29,15 @@ public class Cubo_tarea_1 : MonoBehaviour
         if (verdadera == true)
         {
 
-            Color.GetComponent<MeshRenderer>().material.color = UnityEngine.Color.white;
+         
+        GetComponent<MeshRenderer>().material.color = colorverdadero;
             verdadera = false;
+        
         }
         else
         {
 
-            Color.GetComponent<MeshRenderer>().material.color = UnityEngine.Color.black;
+            GetComponent<MeshRenderer>().material.color = colorfalso;
             verdadera = true;
         }
     }

@@ -5,36 +5,48 @@ using UnityEngine;
 public class Cubo_Tarea_2 : MonoBehaviour
 {
 
-    public GameObject Color;
+    Color colorverdadero = Color.white;
+    Color colorfalso = Color.black;
 
-    bool verdadera;
+    public Cubo_tarea_1 Cubot1; //nombre de variable Cubo1
+
+    public bool CuboA;
+    public bool falsa;
+    public bool ValorDelCubo2;
     // Start is called before the first frame update
 
 
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
+        //Debug.LogError(CuboA);
+        
     }
 
     private void FixedUpdate()
     {
-        if (verdadera == true)
+
+        CuboA = Cubot1.verdadera;
+
+        if (CuboA && falsa)
         {
 
-            Color.GetComponent<MeshRenderer>().material.color = UnityEngine.Color.white;
-            verdadera = false;
+
+            GetComponent<MeshRenderer>().material.color = colorverdadero;
+
+
         }
         else
         {
 
-            Color.GetComponent<MeshRenderer>().material.color = UnityEngine.Color.black;
-            verdadera = true;
+            GetComponent<MeshRenderer>().material.color = colorfalso;
+            
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Cubo_1 : MonoBehaviour
 {
 
-    bool Cubo_verdadero = true;
+    public bool Cubo_verdadero = true;
 
     // Start is called before the first frame update
     void Start()

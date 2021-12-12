@@ -32,9 +32,9 @@ public class Cubo_4 : MonoBehaviour
         b = Cubo3.variable_publica_para_el_4;
         c = Cubo2.ValorCubo3;
 
-        Debug.LogError(a);
-        Debug.LogError(b);
-        Debug.LogError(c);
+        //Debug.LogError(a);
+        //Debug.LogError(b);
+        //Debug.LogError(c);
         if (a == true)
         {
             if ((b && c) == false)

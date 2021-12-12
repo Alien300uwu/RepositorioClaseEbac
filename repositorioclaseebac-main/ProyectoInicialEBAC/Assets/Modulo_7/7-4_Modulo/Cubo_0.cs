@@ -19,7 +19,7 @@ public class Cubo_0 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.LogWarning(ValorDeCubo_0);
+        //Debug.LogWarning(ValorDeCubo_0);
     }
 
     private void FixedUpdate()

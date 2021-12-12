@@ -12,21 +12,20 @@ public class Cubo_Tarea_2 : MonoBehaviour
 
     public bool CuboA;
     public bool falsa;
-    public bool ValorDelCubo2;
     // Start is called before the first frame update
 
 
     void Start()
     {
-        
+        falsa = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        //Debug.LogError(CuboA);
-        
+
+        //Debug.Log(CuboA);
+        //Debug.Log(falsa);
     }
 
     private void FixedUpdate()
@@ -39,14 +38,14 @@ public class Cubo_Tarea_2 : MonoBehaviour
 
 
             GetComponent<MeshRenderer>().material.color = colorverdadero;
-
+            falsa = false;
 
         }
         else
         {
 
             GetComponent<MeshRenderer>().material.color = colorfalso;
-            
+            falsa = true;
         }
     }
 }

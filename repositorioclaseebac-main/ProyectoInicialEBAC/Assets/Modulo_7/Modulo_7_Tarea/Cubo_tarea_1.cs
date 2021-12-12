@@ -21,7 +21,7 @@ public class Cubo_tarea_1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.LogWarning(verdadera);
+        //Debug.Log(verdadera);
     }
 
     private void FixedUpdate()

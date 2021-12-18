@@ -25,9 +25,9 @@ public class Cubo_Tarea_5 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Var_A);
-        Debug.LogWarning(Var_B);
-        Debug.LogError(Var_C);
+        //Debug.Log(Var_A);
+        //Debug.LogWarning(Var_B);
+        //Debug.LogError(Var_C);
     }
 
     private void FixedUpdate()

@@ -5,8 +5,8 @@ using UnityEngine;
 public class Tarea_Modulo_8 : MonoBehaviour
 {
 
-    int Flan = 0;
-    int crepa = 0;
+    int Flan = 2;
+    int crepa = 1;
     float Pastel = 0;
     int Crema = 0;
 
@@ -21,14 +21,16 @@ public class Tarea_Modulo_8 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Flan = Flan + 5;
-        Debug.LogWarning("El Valor del Flan actual es= " + Flan);
 
     }
     private void FixedUpdate()
     {
-        crepa = crepa + 2;
-        Debug.LogError("El Valor de Crepa actual es= " + crepa);
+
+        Flan *= crepa;
+        //Debug.LogWarning("El Valor del Flan actual es= " + Flan);
+
+        crepa ++;
+        //Debug.LogError("El Valor de Crepa actual es= " + crepa);
 
 
         Pastel = Pastel + 3;

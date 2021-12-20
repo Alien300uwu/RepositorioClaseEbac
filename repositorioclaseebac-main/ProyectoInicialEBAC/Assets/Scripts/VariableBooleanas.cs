@@ -75,16 +75,16 @@ public class VariableBooleanas : MonoBehaviour
         //        Debug.Log("El color seleccionado es rojo");
         //        break;
         //    case (int)SeleccionColor.verde:
-        //        Debug.Log("El color seleccionado es rojo");
+        //        Debug.Log("El color seleccionado es verde");
         //        break;
         //    case (int)SeleccionColor.azul when Variable1 == true:
-        //        Debug.Log("El color seleccionado es rojo");
+        //        Debug.Log("El color seleccionado es azul");
         //        break;
         //    case (int)SeleccionColor.blanco:
-        //        Debug.Log("El color seleccionado es rojo");
+        //        Debug.Log("El color seleccionado es blanco");
         //        break;
         //    case (int)SeleccionColor.gris:
-        //        Debug.Log("El color seleccionado es rojo");
+        //        Debug.Log("El color seleccionado es gris");
         //        break;
         //    default:
         //        Debug.Log("Ese no es un color valido");

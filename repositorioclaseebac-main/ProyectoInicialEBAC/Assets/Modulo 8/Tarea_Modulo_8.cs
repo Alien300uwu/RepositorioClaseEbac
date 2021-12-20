@@ -12,6 +12,9 @@ public class Tarea_Modulo_8 : MonoBehaviour
 
     Color CambioPar = Color.red;
     Color CambioImpar = Color.blue;
+    
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +49,9 @@ public class Tarea_Modulo_8 : MonoBehaviour
         {
             GetComponent<MeshRenderer>().material.color = CambioImpar;
         }
+
+
+
 
     }
 }

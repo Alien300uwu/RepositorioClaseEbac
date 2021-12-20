@@ -18,24 +18,48 @@ public class Tarea_Modulo_8_2 : MonoBehaviour
         int A_Int;
         int B_Int;
         int Suma;
-        
-        
+
+
         
         int.TryParse(NumeroS1.ToString(), out A_Int);
         int.TryParse(NumeroS2.ToString(), out B_Int);
 
+
+        //Suma de strings
         Suma = A_Int + B_Int;
         Debug.Log(Suma);
         //Debug.Log(NumeroS1);
         //Debug.Log(NumeroS2);
 
 
-
-
+        //Eliminar los 5 primeros caracteres
         int Letras = 5;
         string Oracion_2 = "Eliminar los 5 primeros caracteres";
         string Int_Para_Oracion = Oracion_2.Substring(Letras);
         Debug.Log(Int_Para_Oracion);
+
+        
+        // Convetir float a string
+        float Numero_Decimal = 9.8066F;
+        Numero_Decimal.ToString();
+        Debug.LogWarning(Numero_Decimal);
+
+
+        //Separar Nombre Con substring
+        string NombreCompleto = "Paolo Martini Bellot";
+
+        string Nombre = NombreCompleto.Substring(0, 5); //Debug.LogWarning(Nombre);
+        string Apellido_P = NombreCompleto.Substring(5, 9); //Debug.LogWarning(Apellido_P);
+        string Apellido_M = NombreCompleto.Substring(13); //Debug.LogWarning(Apellido_M);
+
+
+        //Nombre en lista
+        string[] juntar = NombreCompleto.Split(' ');
+        foreach(var esp in juntar)
+        {
+            Debug.LogError($"{esp}");
+        }
+    
 
     }
 
@@ -47,10 +71,7 @@ public class Tarea_Modulo_8_2 : MonoBehaviour
         int Letras_Par = cero += 2;
         
         Letras = Oracion[Letras_Par];
-        Debug.Log(Letras);
-        if(Letras_Par > 20)
-        {
-        }
+        Debug.Log(Letras);    
     }
     private void FixedUpdate()
     {

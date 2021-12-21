@@ -27,7 +27,7 @@ public class Tarea_Modulo_8_2 : MonoBehaviour
 
         //Suma de strings
         Suma = A_Int + B_Int;
-        Debug.Log(Suma);
+        //Debug.Log(Suma);
         //Debug.Log(NumeroS1);
         //Debug.Log(NumeroS2);
 
@@ -36,13 +36,13 @@ public class Tarea_Modulo_8_2 : MonoBehaviour
         int Letras = 5;
         string Oracion_2 = "Eliminar los 5 primeros caracteres";
         string Int_Para_Oracion = Oracion_2.Substring(Letras);
-        Debug.Log(Int_Para_Oracion);
+        //Debug.Log(Int_Para_Oracion);
 
         
         // Convetir float a string
         float Numero_Decimal = 9.8066F;
-        Numero_Decimal.ToString();
-        Debug.LogWarning(Numero_Decimal);
+        string deci =Numero_Decimal.ToString();
+        Debug.LogWarning(deci);
 
 
         //Separar Nombre Con substring
@@ -75,7 +75,7 @@ public class Tarea_Modulo_8_2 : MonoBehaviour
         if(Letras_Par < 21)
         {
         Letras = Oracion[Letras_Par];
-        Debug.Log(Letras);
+        Debug.LogError(Letras);
         }
 
     }

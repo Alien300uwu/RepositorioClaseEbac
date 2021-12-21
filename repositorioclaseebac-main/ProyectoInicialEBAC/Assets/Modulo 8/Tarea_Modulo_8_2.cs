@@ -70,8 +70,14 @@ public class Tarea_Modulo_8_2 : MonoBehaviour
         string Oracion = "Saludos Hombre Pajaro";
         int Letras_Par = cero += 2;
         
+            
+
+        if(Letras_Par < 21)
+        {
         Letras = Oracion[Letras_Par];
-        Debug.Log(Letras);    
+        Debug.Log(Letras);
+        }
+
     }
     private void FixedUpdate()
     {

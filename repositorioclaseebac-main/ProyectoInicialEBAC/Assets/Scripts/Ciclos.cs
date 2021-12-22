@@ -30,14 +30,49 @@ public class Ciclos : MonoBehaviour
         int[] miArreglo = new int[5];
         miArreglo = new int[7];
         string[] diasSemana = new string[7] { "Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo" };
+        diasSemana = new string[] { "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo", "Lunes", "Martes" };
         for (int i = 0; i < diasSemana.Length; i++)
         {
             miArreglo[i] = i + 1;
-            Debug.Log(diasSemana[i]);
+            //Debug.Log(diasSemana[i]);
+        }
+        foreach (int i in miArreglo)
+        {
+            Debug.Log(i);
+        }
+        foreach(string dia in diasSemana)
+        {
+            Debug.Log(dia);
         }
 
-        int[,] miMatriz = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        //int[,] miMatriz = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+        //for(int j = 0; j < miMatriz.GetLength(0); j++)
+        //{
+        //    for (int k = 0; k < miMatriz.GetLength(1); k++)
+        //    {
+        //        miMatriz[j, k] += 1;
+        //        Debug.Log(miMatriz[j, k]);
+        //    }
+            
+        //}
 
+
+        //int[][] miArregloJagged = new int[][]
+        //{
+        //    new int[]{ 1, 2, 3},
+        //    new int[]{ 4, 5},
+        //    new int[]{ 6, 7, 8, 9}
+        //};
+        //miArregloJagged[1] = new int[] { 10, 11, 12, 13 };
+
+        //Debug.Log(miArregloJagged[0][1]);
+        //for (int x =0; x < miArregloJagged.Length; x++)
+        //{
+        //    for (int y = 0; y < miArregloJagged[x].Length; y++) 
+        //    {
+        //        Debug.Log(miArregloJagged[x][y]);
+        //    }
+        //}
 
         // tiene tres partes
         // 1 = iniciador (i = 0)

@@ -38,11 +38,11 @@ public class Ciclos : MonoBehaviour
         }
         foreach (int i in miArreglo)
         {
-            Debug.Log(i);
+            //Debug.Log(i);
         }
         foreach(string dia in diasSemana)
         {
-            Debug.Log(dia);
+            //Debug.Log(dia);
         }
 
         //int[,] miMatriz = new int[3, 3] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };

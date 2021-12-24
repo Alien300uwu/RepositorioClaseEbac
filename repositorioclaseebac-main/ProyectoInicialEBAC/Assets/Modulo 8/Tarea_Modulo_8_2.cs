@@ -41,7 +41,7 @@ public class Tarea_Modulo_8_2 : MonoBehaviour
         
         // Convetir float a string
         float Numero_Decimal = 9.8066F;
-        string deci =Numero_Decimal.ToString();
+        string deci = Numero_Decimal.ToString();
         Debug.LogWarning(deci);
 
 

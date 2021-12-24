@@ -48,7 +48,16 @@ public class ejercicios_De_Ciclos_y_Arreglos : MonoBehaviour
         int[,] bidimencional = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
         int[] unidimensional = new int[3] { 3, 2, 1 };
 
+        int resultado1 = (unidimensional[0] * bidimencional[0, 0]) + (unidimensional[1] * bidimencional[0, 1]) + (unidimensional[2] * bidimencional[0, 2]);
+        int resultado2 = (unidimensional[0] * bidimencional[1, 0]) + (unidimensional[1] * bidimencional[1, 1]) + (unidimensional[2] * bidimencional[1, 2]);
 
+        int[] resultado_Final_a = new int[2] { resultado1, resultado2 };
+
+        string resultado_Final_b = $"{resultado1}, " + $"{resultado2}";
+        //Debug.Log(resultado1);
+        //Debug.Log(resultado2);
+        Debug.Log(resultado_Final_a);
+        Debug.Log(resultado_Final_b);
 
     }
 

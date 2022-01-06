@@ -7,14 +7,15 @@ public class Ejerciciosestructuras : MonoBehaviour
     List<int> ListadeNumeros = new List<int>();
     List<string> ListaDelEje3 = new List<string>();
     HashSet<string> HashSetDelEje3 = new HashSet<string>();
-
-
+    Stack<string> PilaParaEje4 = new Stack<string>();
+    Queue<string> ColadelEje4 = new Queue<string>();
     // Start is called before the first frame update
     void Start()
     {
         Ejercicio1();
         Ejercicio2();
         Ejercicio3();
+        Ejercicio4();
     }
 
     // Update is called once per frame
@@ -64,15 +65,55 @@ public class Ejerciciosestructuras : MonoBehaviour
         foreach (var name in ListaDelEje3)
         {
             HashSetDelEje3.Add(name);
-            if (ListaDelEje3.Contains(name))
-            {
-                HashSetDelEje3.Remove(name);
-                Debug.Log(name);
-            }
-            
+            //Debug.Log(name);
+        }
+        foreach (var adentro in HashSetDelEje3)
+        {
+            //Debug.Log(adentro);
         }
     }
+    public void Ejercicio4()
+    {
+        PilaParaEje4.Push("Peso");
+        PilaParaEje4.Push("Euro");
+        PilaParaEje4.Push("Yen");
+        PilaParaEje4.Push("libra");
+        PilaParaEje4.Push("Rublo");
+        PilaParaEje4.Push("Dolar");
+        //Debug.Log(PilaParaEje4.Peek());
+        //PilaParaEje4.Pop();
+        //Debug.Log(PilaParaEje4.Peek());
+        //PilaParaEje4.Pop();
+        //Debug.Log(PilaParaEje4.Peek());
+        //PilaParaEje4.Pop();
+        //Debug.Log(PilaParaEje4.Peek());
+        //PilaParaEje4.Pop();
+        //Debug.Log(PilaParaEje4.Peek());
+        //PilaParaEje4.Pop();
+        //Debug.Log(PilaParaEje4.Peek());
+        //PilaParaEje4.Pop();
 
+        foreach(var pila in PilaParaEje4)
+        {
+            ColadelEje4.Enqueue(pila);
+            //Debug.Log(pila);
+            //Esto ya me imprime los datos de la cola si uso esto me puedo ahorrar todos los debugs no? tanto con la pila con otro foreach como con la cola no?
+        }
+
+        //Debug.Log(ColadelEje4.Peek());
+        //ColadelEje4.Dequeue();
+        //Debug.Log(ColadelEje4.Peek());
+        //ColadelEje4.Dequeue();
+        //Debug.Log(ColadelEje4.Peek());
+        //ColadelEje4.Dequeue();
+        //Debug.Log(ColadelEje4.Peek());
+        //ColadelEje4.Dequeue();
+        //Debug.Log(ColadelEje4.Peek());
+        //ColadelEje4.Dequeue();
+        //Debug.Log(ColadelEje4.Peek());
+        //ColadelEje4.Dequeue();
+
+    }
 
 
 }

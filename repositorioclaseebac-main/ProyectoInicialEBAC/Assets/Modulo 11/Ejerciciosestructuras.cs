@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ejerciciosestructuras : MonoBehaviour
 {
     List<int> ListadeNumeros = new List<int>();
+    List<int> ListaParaEje2 = new List<int>();
     List<string> ListaDelEje3 = new List<string>();
     HashSet<string> HashSetDelEje3 = new HashSet<string>();
     Stack<string> PilaParaEje4 = new Stack<string>();
@@ -21,10 +22,10 @@ public class Ejerciciosestructuras : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    
+
     public void Ejercicio1(int tamaño = 10, int rangoInf = 0, int rangoSup = 10)
     {
 
@@ -41,13 +42,22 @@ public class Ejerciciosestructuras : MonoBehaviour
 
     public void Ejercicio2()
     {
-        int[] Arreglo1 = new int[5] { 1, 4, 3, 2, 0 };
-        int[] Arreglo2 = new int[] { Arreglo1[1], Arreglo1[2], Arreglo1[3], Arreglo1[0], Arreglo1[4] };
-        foreach(var numero in Arreglo2)
+        int[] Arreglo1 = new int[5] { 1, 7, 10, 5, 8 };
+
+
+        foreach (var numero in Arreglo1)
+        {
+            ListaParaEje2.Add(numero);
+        }
+        ListaParaEje2.Sort();
+        ListaParaEje2.Reverse();
+        foreach (var numero in ListaParaEje2)
         {
             //Debug.Log($"{numero}");
         }
-        
+
+   ;
+
     }
 
     public void Ejercicio3()
@@ -62,16 +72,40 @@ public class Ejerciciosestructuras : MonoBehaviour
         ListaDelEje3.Add("Raul");   //repe
         ListaDelEje3.Add("Jorge");
 
+        
+        for(int i = 0; i < ListaDelEje3.Count; i++)
+        {
+            if (ListaDelEje3.Contains("Andre"))
+            {
+                ListaDelEje3.Remove("Andre");
+                //Debug.Log("Elemento eliminado");
+            }
+            if (ListaDelEje3.Contains("Raul"))
+            {
+                ListaDelEje3.Remove("Raul");
+                //Debug.Log("Elemento eliminado");
+            }
+            if (ListaDelEje3.Contains("Paco"))
+            {
+                ListaDelEje3.Remove("Paco");
+                //Debug.Log("Elemento eliminado");
+            }
+        }
+        
+
         foreach (var name in ListaDelEje3)
         {
-            HashSetDelEje3.Add(name);
-            //Debug.Log(name);
+                HashSetDelEje3.Add(name);
+                Debug.Log(name);
         }
-        foreach (var adentro in HashSetDelEje3)
+        foreach (var item in HashSetDelEje3)
         {
-            //Debug.Log(adentro);
+            Debug.LogWarning($"{item}");
         }
+
+
     }
+
     public void Ejercicio4()
     {
         PilaParaEje4.Push("Peso");
